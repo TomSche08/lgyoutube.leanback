@@ -1,7 +1,7 @@
 {
-  "name": "youtube-webos",
+  "name": "com.lgyoutube.leanback",
   "version": "0.5.3",
-  "description": "Ad-free YouTube app for webOS",
+  "description": "LG YouTube Client for webOSTV (adFree)",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
     "build:dev": "webpack --mode=development",
     "package": "ares-package -n dist",
     "deploy": "node tools/deploy.js",
-    "inspect": "ares-inspect youtube.leanback.v4",
-    "launch": "ares-launch youtube.leanback.v4",
-    "manifest": "node tools/gen-manifest.cjs youtube.leanback.v4.manifest.json",
+    "inspect": "ares-inspect com.lgyoutube.leanback",
+    "launch": "ares-launch com.lgyoutube.leanback",
+    "manifest": "node tools/gen-manifest.cjs com.lgyoutube.leanback.manifest.json",
     "prepare": "husky",
     "test:compat": "es-check",
     "lint:eslint": "eslint --concurrency auto",
@@ -21,8 +21,8 @@
   },
   "repository": "github:webosbrew/youtube-webos",
   "license": "GPL-3.0-only",
-  "bugs": "https://github.com/webosbrew/youtube-webos/issues",
-  "homepage": "https://github.com/webosbrew/youtube-webos#readme",
+  "bugs": "https://github.com/TomSche08/lgyoutube.leanback/issues",
+  "homepage": "https://github.com/TomSche08/lgyoutube.leanback#readme",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.29.2",
     "core-js-pure": "^3.49.0",
